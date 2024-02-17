@@ -1,16 +1,17 @@
 import {StyleSheet} from "react-native";
 import getFontFamily from "../../android/app/src/main/assets/fonts/helper";
+import {horizontalScale, scaleFonSize, verticalScale} from "../../assets/scaling";
 
 const userStyle = StyleSheet.create({
   storyContainer: {
-    marginRight: 20,
+    marginRight: horizontalScale(20),
   },
   firstName: {
     textAlign: 'center',
-    marginTop: 8,
+    marginTop: verticalScale(8),
     fontFamily: getFontFamily('Bold'),
     fontWeight: '500',
-    fontSize: 14,
+    fontSize: scaleFonSize(14),
     color: '#022150'
   },
 
